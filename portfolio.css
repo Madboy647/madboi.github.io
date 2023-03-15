@@ -1,0 +1,1355 @@
+@font-face {
+    font-family: high;
+    src: url(FontsFree-Net-HighriseDemo-400.ttf);
+}
+@font-face {
+    font-family: lemon;
+    src: url(lemon.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.myinfo{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+
+.myinfo h1{
+    position: relative;
+    top: 220px;
+    left: 200px;
+    width: fit-content;
+    font:  3rem lemon;
+    color: white;
+    letter-spacing: 2px;
+  
+}
+.myinfo h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background: #000000;
+    border-left: 1px solid #00ff4c;
+    animation: typing 2s steps(14);
+    animation-fill-mode: forwards;
+
+}
+@keyframes typing {
+    90%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+
+}
+
+.myinfo h2{
+    position: relative;
+    top: 220px;
+    right: -200px;
+    width: fit-content;
+    font: 3rem high;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 2;
+}
+.myinfo #hire{
+    position: relative;
+    top: 40px;
+    left: 1370px;
+    animation: blink 2s infinite;
+}
+@keyframes blink {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  .myinfo #hire:hover{
+    animation: none;
+  }
+.myinfo button{
+    position: relative;
+    right: -700px;
+    bottom: -300px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:3px solid rgb(0, 255, 38);
+    background-color: transparent;
+    color: white;
+    font: 1rem lemon;
+    filter: drop-shadow(0px 0px 10px #00FF47);
+}
+.myinfo button a{
+  text-decoration: none;
+  color: white;
+}
+.myinfo button:hover{
+    color: white;
+    font: 1rem lemon;
+    background-color: transparent;
+border: 2px solid #00FD47;
+box-shadow: 0px 0px 20px 5px #00FD47;
+border-radius: 50px;
+animation:forwards;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.myinfo .line{
+    animation: scroll 2s;
+    animation-fill-mode:forwards;
+}
+@keyframes scroll {
+    0% {
+                transform: scaleY(0.1);
+                transform-origin: 100% 0%;
+      }
+      100% {
+                transform: scaleY(1);
+                transform-origin: top left ;
+                
+      }
+    }
+.line .line1{
+   position: relative;
+   top: -650px;
+   left: 80px;
+    width: 0.3vw;
+    height: 55vh;
+    background: #ffffff;
+    border: 1px solid #19fd00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #19fd00, 0px 0px 25px #19fd00;
+}
+  .line i{
+    position: relative;
+    top: -630px;
+    right: -70px;
+   font-size: 2rem;  
+    color: white;
+text-shadow: 0px 0px 10px #b5ff07;
+  }
+
+    .line .line2{
+      position: relative;
+      top: -612px;
+      left: 80px;
+         width: 0.3vw;
+         height: 39vh;
+         background: #ffffff;
+         border: 1px solid #19fd00;
+         border-radius: 5px;
+         box-shadow: 0px 0px 20px #19fd00, 0px 0px 25px #19fd00;
+    }
+.circle{
+    position: relative;
+    left: 1000px;
+    top: -100px;
+    width: 20vw;
+    height: 40vh;
+    border-radius: 100%;
+    background: linear-gradient(#d4fc79,#96e6a1);
+}
+.circle img{
+    position: relative;
+    left: -140px;
+    top: -73px;
+    width: 30vw;
+    border-radius: 300px;
+    overflow: hidden;
+   
+}
+.education{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.education img{
+    position: relative;
+    left: 1180px;
+    top: -930px;
+}
+.hsc,.hscc,.college{
+    position: relative;
+    top: 60px;
+    animation: hsc 2s;
+
+}
+@keyframes hsc {
+    0% {
+        
+      letter-spacing: -0.5em;
+              transform: translateZ(-800px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateZ(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+.education .hsc{
+    position: relative;
+    top: 80px;
+    left: 240px;
+    width: fit-content;
+    
+
+}
+.education .hsc h1{
+    color: white;
+    font: 2rem lemon;
+    letter-spacing: 2px;
+    
+}
+
+  
+.education .hsc h2{
+    color: white;
+    font: 2rem high;
+    letter-spacing: 5px;
+    line-height: 2;
+   
+}
+.education .hsc img{
+    position: relative;
+    top: -130px;
+    left: 110px;
+    rotate: -25deg;
+}
+.education .hscc h1{
+    position: relative;
+    top: 20px;
+    right: -240px;
+    width: fit-content;
+    color: white;
+    font: 2rem lemon;
+    letter-spacing: 2px;
+   
+}
+.education .hscc h2{
+    position: relative;
+    top: 20px;
+    right: -240px;
+    width: fit-content;
+    color: white;
+    font: 2rem high;
+    letter-spacing: 5px;
+    line-height: 2;
+}
+.education .hscc img{
+    position: relative;
+    top: -150px;
+    left: 330px;
+ 
+}
+.education .college h1{
+    position: relative;
+    top:20px;
+    right: -240px;
+    width: fit-content;
+    color: white;
+    font: 2rem lemon;
+    letter-spacing: 2px;
+}
+.education .college h2{
+    position: relative;
+    top: 20px;
+    right: -240px;
+    width: fit-content;
+    color: white;
+    font: 2rem high;
+    letter-spacing: 5px;
+    line-height: 2;
+}
+.education .college h3{
+    position: relative;
+    top: 20px;
+    right: -240px;
+    width: fit-content;
+    color: white;
+    font: 2rem high;
+    letter-spacing: 5px;
+
+}
+.education .college img{
+    position: relative;
+    top: -175px;
+    left: 320px;
+    rotate: 45deg;
+}
+.education .edu{
+    animation: edu s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in;
+   
+}
+
+@keyframes edu {
+    0% {
+                transform: scaleY(0.1);
+                transform-origin: 100% 0%;
+      }
+      100% {
+                transform: scaleY(1);
+                transform-origin: top left ;      
+      }
+    }
+ 
+    .edu .line-edu{
+        position: relative;
+        top: -625px;
+        left: 80px;
+         width: 0.3vw;
+         height: 55vh;
+         background: #ffffff;
+         border: 1px solid #00ff84;
+         border-radius: 5px;
+         box-shadow: 0px 0px 20px #00ff84, 0px 0px 25px #00ff84;
+     }
+       .edu i{
+         position: relative;
+         top: -610px;
+         left: 60px;
+         
+        font-size: 2rem;  
+         color: white;
+     text-shadow: 0px 0px 10px #00ff84;
+       }
+     
+         .edu .line-edu2{
+           position: relative;
+           top: -600px;
+           left: 80px;
+              width: 0.3vw;
+              height: 39vh;
+              background: #ffffff;
+              border: 1px solid #00ff84;
+              border-radius: 5px;
+              box-shadow: 0px 0px 20px #00ff84, 0px 0px 25px #00ff84;
+         }
+
+
+.skills{
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+@keyframes drop {
+    0% {
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform-origin: 50% 0%;
+              filter: blur(300px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateY(0) scaleY(0.9) scaleX(0.9);
+              transform-origin: 50% 50%;
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .skills img{
+    position: relative;
+    left: 1200px;
+    top: -1050px;
+    width: 15vw;
+   
+  }
+  .skills h3{
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    color: white;
+    font-family: lemon;
+    font-size: 4rem;
+    transform: rotate(90deg);
+    opacity: 0.1;
+  }
+  
+.skills .figma {
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    top: 0px;
+    right: -260px;
+    width: fit-content;
+text-shadow: 0px 0px 20px #fafafa;
+color: white;
+animation: drop 0.2s;
+}
+.figma h2{
+  position: relative;
+  top: 30px;
+  left: 200px;
+  font: 1.5rem lemon;
+  width: fit-content;
+  height: fit-content;
+}
+.figma .figma-meter {
+    box-sizing: content-box;
+    height: 1vh;
+    position: relative;
+    top: -30px;
+    left: 200px;
+    width: 40vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .figma-meter > span {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    height: 0.6vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #5100ff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #5100ff, 0px 0px 25px #6200ff;
+    overflow: hidden;
+  }
+  .figma-meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgb(255, 255, 255) 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  .skills .html {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 0;
+    right: -260px;
+    width: fit-content;
+text-shadow: 0px 0px 20px #fb8405;
+animation: drop 0.4s;
+}
+.html h2{
+  position: relative;
+  top: 30px;
+  left: 200px;
+  font: 1.5rem lemon;
+
+}
+.html .html-meter {
+    box-sizing: content-box;
+    height: 1vh;
+    position: relative;
+    top: -30px;
+    left: 200px;
+    width: 40vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .html-meter > span {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    height: 0.6vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #ff8000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ff9500, 0px 0px 25px #ff6200;
+    overflow: hidden;
+  }
+  .html-meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgb(255, 255, 255) 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+
+.skills .css {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 0px;
+    right: -260px;
+    width: fit-content;
+text-shadow: 0px 0px 20px #0905f4;
+animation: drop 0.6s;
+}
+.css h2{
+  position: relative;
+  top: 30px;
+  left: 200px;
+  font: 1.5rem lemon;
+
+}
+
+.css .css-meter {
+    box-sizing: content-box;
+    height: 1vh;
+    position: relative;
+    top: -30px;
+    left: 200px;
+    width: 40vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .css-meter > span {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    height: 0.6vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #0905f4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #0905f4, 0px 0px 25px #0905f4;
+    overflow: hidden;
+  }
+  .css-meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgb(255, 255, 255) 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+.skills .js {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 0px;
+    right: -260px;
+    width: fit-content;
+text-shadow: 0px 0px 20px #ffee05;
+animation: drop 0.8s;
+}
+.js h2{
+  position: relative;
+  top: 30px;
+  left: 200px;
+  font: 1.5rem lemon;
+
+}
+.js .js-meter {
+    box-sizing: content-box;
+    height: 1vh;
+    position: relative;
+    top: -30px;
+    left: 200px;
+    width: 40vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .js-meter > span {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    height: 0.6vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #ffee05;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #ffee05, 0px 0px 25px #ffee05;
+    overflow: hidden;
+  }
+  .js-meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgb(255, 255, 255) 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  .skills .react {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 0px;
+    right: -260px;
+    width: fit-content;
+text-shadow: 0px 0px 20px #00AF7B;
+animation: drop 1s;
+}
+.react h2{
+  position: relative;
+  top: 30px;
+  left: 200px;
+  font: 1.5rem lemon;
+
+}
+.react .react-meter {
+    box-sizing: content-box;
+    height: 1vh;
+    position: relative;
+    top: -30px;
+    left: 200px;
+    width: 40vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .react-meter > span {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    height: 0.6vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #3ff4b1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #3ff4b1, 0px 0px 25px #3ff4b1;
+    overflow: hidden;
+  }
+  .react-meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgb(255, 255, 255) 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+.skills .bootstrap {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 0px;
+    right: -260px;
+    width: fit-content;
+text-shadow: 0px 0px 20px #563df3;
+animation: drop 1.2s;
+}
+.bootstrap h2{
+  position: relative;
+  top: 30px;
+  left: 200px;
+  font: 1.5rem lemon;
+
+}
+.bootstrap .boot-meter {
+    box-sizing: content-box;
+    height: 1vh;
+    position: relative;
+    top: -30px;
+    left: 200px;
+    width: 40vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .boot-meter > span {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    height: 0.6vh;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #563df3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #563df3, 0px 0px 25px ;
+    overflow: hidden;
+  }
+  .boot-meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgb(255, 255, 255) 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+.skills .skil{
+    animation: skil 2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in;
+   
+}
+
+@keyframes skil {
+    0% {
+                transform: scaleY(0.1);
+                transform-origin: 100% 100%;
+      }
+      100% {
+                transform: scaleY(1);
+                transform-origin: top left ;      
+      }
+    }
+ 
+.skil .line-skill{
+    position: relative;
+    top: -708px;
+    left: 80px;
+     width: 0.3vw;
+     height: 55vh;
+     background: #ffffff;
+     border: 1px solid #4c00ff;
+     border-radius: 5px;
+     box-shadow: 0px 0px 20px #4c00ff, 0px 0px 25px #4c00ff;
+ }
+   .skil i{
+     position: relative;
+     top: -695px;
+     left: 70px;
+    font-size: 2rem;  
+     color: white;
+ text-shadow: 0px 0px 10px #4c00ff;
+   }
+ 
+     .skil .line-skill2{
+       position: relative;
+       top: -670px;
+       left: 80px;
+          width: 0.3vw;
+          height: 35vh;
+          background: #ffffff;
+          border: 1px solid #4c00ff;
+          border-radius: 5px;
+          box-shadow: 0px 0px 20px #4c00ff, 0px 0px 25px #4c00ff;
+     }
+.projects{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.projects .pro{
+    animation: pro 2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes pro {
+    0% {
+                transform: scaleY(0.1);
+                transform-origin: 100% 0%;
+      }
+      100% {
+                transform: scaleY(1);
+                transform-origin: top left ;      
+      }
+    }
+ 
+.pro .line-proj{
+    position: relative;
+    top: 0px;
+    left: 80px;
+     width: 0.3vw;
+     height: 55vh;
+     background: #ffffff;
+     border: 1px solid #ffbf00;
+     border-radius: 5px;
+     box-shadow: 0px 0px 20px #ffbf00, 0px 0px 25px #ffbf00;
+ }
+   .pro i{
+     position: relative;
+     top: 20px;
+     left: 65px;
+    font-size: 2rem;  
+     color: white;
+ text-shadow: 0px 0px 10px #ffbf00;
+   }
+ 
+     .pro .line-proj1{
+       position: relative;
+       top: 40px;
+       left: 80px;
+          width: 0.3vw;
+          height: 35vh;
+          background: #ffffff;
+          border: 1px solid #ffbf00;
+          border-radius: 5px;
+          box-shadow: 0px 0px 20px #ffbf00, 0px 0px 25px #ffbf00;
+     }
+     .projects .first{
+        display: flex;    
+        justify-content: space-around;
+        position: relative;
+        top: -600px;
+        right: -240px;
+        width: 80vw;
+     }
+     .projects .nutri{
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(255, 225, 141);
+        border-right: 2px solid rgb(218, 249, 95);
+        border-bottom: 2px solid rgb(148, 250, 32);
+        border-left: 2px solid rgb(174, 255, 0);
+     
+    }
+    .nutri img{
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .projects .cake{
+   
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(183, 0, 255);
+        border-right: 2px solid rgb(169, 95, 249);
+        border-bottom: 2px solid rgb(148, 32, 250);
+        border-left: 2px solid rgb(255, 0, 195);
+    }
+    .cake img{
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .projects .food{
+      
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(186, 186, 186);
+        border-right: 2px solid rgb(94, 94, 94);
+        border-bottom: 2px solid rgb(168, 168, 168);
+        border-left: 2px solid rgb(251, 251, 251);
+    }
+    .food img {
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+ 
+     .projects .crypto{
+      
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(186, 186, 186);
+        border-right: 2px solid rgb(94, 94, 94);
+        border-bottom: 2px solid rgb(168, 168, 168);
+        border-left: 2px solid rgb(251, 251, 251);
+    }
+    .crypto img {
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .projects .second{
+        display: flex;    
+        justify-content: space-between;
+        position: relative;
+       top: -500px;
+       right: -240px;    
+        width: 80vw;
+     }
+    .projects .todo{
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(186, 186, 186);
+        border-right: 2px solid rgb(94, 94, 94);
+        border-bottom: 2px solid rgb(168, 168, 168);
+        border-left: 2px solid rgb(251, 251, 251);
+    }
+    .todo img {
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+ 
+    .projects .crud{
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(186, 186, 186);
+        border-right: 2px solid rgb(94, 94, 94);
+        border-bottom: 2px solid rgb(168, 168, 168);
+        border-left: 2px solid rgb(251, 251, 251);
+    }
+    .projects .login{
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(116, 233, 248);
+        border-right: 2px solid rgb(86, 246, 246);
+        border-bottom: 2px solid rgb(10, 208, 223);
+        border-left: 2px solid rgb(8, 188, 237);
+    }
+    .login img {
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+ 
+    .projects .crud{
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(255, 221, 0);
+        border-right: 2px solid rgb(240, 204, 0);
+        border-bottom: 2px solid rgb(255, 194, 9);
+        border-left: 2px solid rgb(255, 238, 0);
+    }
+    .crud img {
+        width: 18vw;
+        height: 25vh;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+ 
+    .projects .log{
+        width: 18vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        border-top: 2px solid rgb(186, 186, 186);
+        border-right: 2px solid rgb(94, 94, 94);
+        border-bottom: 2px solid rgb(168, 168, 168);
+        border-left: 2px solid rgb(251, 251, 251);
+    }
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.contact .cont{
+    animation: cont 2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes cont {
+    0% {
+                transform: scaleY(0.1);
+                transform-origin: 100% 0%;
+      }
+      100% {
+                transform: scaleY(1);
+                transform-origin: top left ;      
+      }
+    }
+ 
+.cont .line-cont{
+    position: relative;
+    top: 0px;
+    left: 80px;
+     width: 0.3vw;
+     height: 55vh;
+     background: #ffffff;
+     border: 1px solid #ff0000;
+     border-radius: 5px;
+     box-shadow: 0px 0px 20px #ff0000, 0px 0px 25px #ff0000;
+ }
+   .cont i{
+     position: relative;
+     top: 20px;
+     left: 70px;
+    font-size: 2rem;  
+     color: white;
+ text-shadow: 0px 0px 10px #ff0000;
+   }
+ 
+     .cont .line-cont1{
+       position: relative;
+       top: 40px;
+       left: 80px;
+          width: 0.3vw;
+          height: 35vh;
+          background: #ffffff;
+          border: 1px solid #ff0000;
+          border-radius: 5px;
+          box-shadow: 0px 0px 20px #ff0000, 0px 0px 25px #ff0000;
+     }
+     .contact .myinfo-last{
+        position: relative;
+        top: -640px;
+        right: -240px;
+        width: 30vw;
+        height: 80vh;
+        box-sizing: border-box;
+        border: 2px solid rgba(255, 255, 255, 0.732);
+        border-radius: 20px;
+     }
+     .myinfo-last img{
+        position: relative;
+        right: -100px;
+        top: -40px;
+        width: 15vw;
+        border-radius: 20px;
+     }
+     .contact .myinfo-last h1{
+        position: relative;
+        top: -40px;
+        right: -20px;
+        color: white;
+        font: 2rem lemon;
+     }
+     .contact .myinfo-last h4{
+        position: relative;
+        top: -30px;
+        right: -20px;
+        color: rgba(255, 255, 255, 0.777);
+        font: 1rem lemon;
+
+     }
+     .contact .myinfo-last p{
+
+        position: relative;
+        top: 0px;
+        right: -20px;
+        color: rgba(255, 255, 255, 0.638);
+        font: 0.8rem lemon;
+        letter-spacing: 2px;
+        overflow: hidden;
+        line-height: 2;
+     }
+     .contact .myinfo-last a{
+        position: relative;
+        top: 40px;
+        left: 20px;
+        list-style-type: none;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.581);
+        font: 1rem lemon ;
+        line-height: 2;
+     }
+     .myinfo-last .social-last a{
+        position: relative;
+        top: 60px;
+        left: 100px;
+        font-size: 2rem;
+        margin-left: 30px;
+     }
+     .social-last #insta:hover{
+        font-size: 2rem;
+        color: transparent;
+        background-image: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+        -webkit-background-clip: text;
+      }
+      .social-last #linked:hover{
+        font-size: 2rem;
+        color: transparent;
+        background: rgb(5, 92, 143);
+        -webkit-background-clip: text;
+      }
+      .social-last #whts:hover{
+        font-size: 2rem;
+        color: transparent;
+        background-image: linear-gradient(#9cdedd,	#25D366);
+        -webkit-background-clip: text;
+      }
+      .social-last #git:hover{
+        color: white;
+        
+      }
+     .myinfo-last:hover{
+        border: 1px solid #ff0000;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px #ff0000, 0px 0px 25px #ff0000;
+     }
+     .myinfo-last img:hover{
+        animation: zoom 1s ease-out both;
+    }
+     
+      @keyframes zoom {
+        0% {
+                  transform: scale(1) translateY(0);
+             transform-origin: 50% 16%;
+        }
+        100% {
+                  transform: scale(1.25) translateY(-15px);
+                  transform-origin: top;
+        }
+      }
+
+      .contact .message-box{
+        position: relative;
+        top: -1235px;
+        left: 820px;
+        width: 30vw;
+        height: 80vh;
+        border-radius: 20px;
+        background: linear-gradient(145deg, #000000, #252525);
+        box-shadow:  36px 36px 92px #141414,
+                     -36px -36px 92px #3e3e3e;
+                     border: 2px solid white;
+     
+      }
+      .message-box:hover{
+        background: linear-gradient(165deg, #000000, #252525);
+        box-shadow: 0px 0px 20px #ff0000, 0px 0px 25px #ff0000;
+        border: 1px solid #ff0000;
+        border-radius: 5px;
+      
+      }
+      .message-box form{
+        padding: 40px;
+      }
+      #form input{
+        line-height: 1.5;
+      }
+      #form label{
+        line-height: 3;
+      }
+      form input{
+        padding: 10px 30px;
+        border-radius:10px;
+        line-height: 1.5;
+        font: 0.8rem lemon;
+      }
+      
+   
+ 
+      form  #message{
+       width: 15vw;
+       height: 15vh;
+      }
+      form button{
+        position: relative;
+        top: 80px;
+        left: 30px;
+        padding: 10px 20px;
+        width: 20vw;
+        border: 2px solid rgb(193, 193, 193);
+        border-radius: 20px;
+        font: 1rem lemon;
+        background: rgb(34, 34, 34);
+        color: white;
+        cursor: pointer;
+      }
+      form button:hover{
+        background: linear-gradient(rgba(107, 107, 107, 0.438),rgba(72, 72, 72, 0.29));
+        
+      }
+      form label{
+        display: block;
+        color: white;
+        font: 1rem lemon ;
+      }
