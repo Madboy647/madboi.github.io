@@ -1356,7 +1356,7 @@ animation: drop 1.2s;
       }
 
 /* Styles for screens smaller than 768px (mobile devices) */
-@media (max-width: 767px) {
+@media (min-width: 480px, max-width:768) {
   /* Adjust font sizes, layout, and other styles as needed */
   .myinfo h1 {
     font-size: 2rem;
@@ -1434,26 +1434,3 @@ animation: drop 1.2s;
   /* ... */
 }
 
-/* Styles for screens larger than 1024px (desktops) */
-@media (min-width: 1025px) {
-  /* Adjust font sizes, layout, and other styles as needed */
-  /* ... */
-}
-
-/* Styles for tablets */
-@media (max-width: 767px) and (min-width: 480px) {
-  /* Tablet-specific styles */
-  .container {
-    /* Adjust container styles for tablets */
-  }
-  /* ... */
-}
-
-/* Styles for mobile devices */
-@media (max-width: 479px) {
-  /* Mobile-specific styles */
-  .container {
-    /* Adjust container styles for mobile */
-  }
-  /* ... */
-}
