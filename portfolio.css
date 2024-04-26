@@ -1,3 +1,7 @@
+/* Styles for desktop/larger screens */
+@media (min-width: 768px) {
+  /* Your existing CSS styles */
+}
 @font-face {
     font-family: high;
     src: url(FontsFree-Net-HighriseDemo-400.ttf);
@@ -1353,3 +1357,23 @@ animation: drop 1.2s;
         color: white;
         font: 1rem lemon ;
       }
+
+
+
+/* Styles for tablets */
+@media (max-width: 767px) and (min-width: 480px) {
+  /* Tablet-specific styles */
+  .container {
+    /* Adjust container styles for tablets */
+  }
+  /* ... */
+}
+
+/* Styles for mobile devices */
+@media (max-width: 479px) {
+  /* Mobile-specific styles */
+  .container {
+    /* Adjust container styles for mobile */
+  }
+  /* ... */
+}
