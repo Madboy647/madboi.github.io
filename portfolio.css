@@ -1,7 +1,4 @@
-/* Styles for desktop/larger screens */
-@media (min-width: 768px) {
-  /* Your existing CSS styles */
-}
+
 @font-face {
     font-family: high;
     src: url(FontsFree-Net-HighriseDemo-400.ttf);
@@ -1358,7 +1355,90 @@ animation: drop 1.2s;
         font: 1rem lemon ;
       }
 
+/* Styles for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+  /* Adjust font sizes, layout, and other styles as needed */
+  .myinfo h1 {
+    font-size: 2rem;
+    left: 20px;
+  }
 
+  .myinfo h2 {
+    font-size: 2rem;
+    right: -20px;
+  }
+
+  /* Adjust the layout for skills section */
+  .skills .figma, .skills .html, .skills .css, .skills .js, .skills .react, .skills .bootstrap {
+    font-size: 2rem;
+    right: 0;
+  }
+
+  .skills .figma h2, .skills .html h2, .skills .css h2, .skills .js h2, .skills .react h2, .skills .bootstrap h2 {
+    left: 20px;
+    font-size: 1rem;
+  }
+
+  .skills .figma-meter, .skills .html-meter, .skills .css-meter, .skills .js-meter, .skills .react-meter, .skills .boot-meter {
+    width: 80vw;
+    left: 20px;
+  }
+
+  /* Adjust the layout for projects section */
+  .projects .first, .projects .second {
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+  }
+
+  .projects .nutri, .projects .cake, .projects .food, .projects .crypto, .projects .todo, .projects .crud, .projects .login, .projects .log {
+    width: 80vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+
+  .projects .nutri img, .projects .cake img, .projects .food img, .projects .crypto img, .projects .todo img, .projects .crud img, .projects .login img, .projects .log img {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  /* Adjust the layout for contact section */
+  .contact .myinfo-last {
+    width: 80vw;
+    height: auto;
+    right: 0;
+    padding: 20px;
+  }
+
+  .contact .message-box {
+    width: 80vw;
+    height: auto;
+    left: 0;
+    margin: 20px;
+  }
+
+  form #message {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  form button {
+    width: 70vw;
+    left: 0;
+  }
+}
+
+/* Styles for screens between 768px and 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust font sizes, layout, and other styles as needed */
+  /* ... */
+}
+
+/* Styles for screens larger than 1024px (desktops) */
+@media (min-width: 1025px) {
+  /* Adjust font sizes, layout, and other styles as needed */
+  /* ... */
+}
 
 /* Styles for tablets */
 @media (max-width: 767px) and (min-width: 480px) {
